@@ -1,0 +1,271 @@
+/* Overriding Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+hr {
+    border: 1px solid;
+    width: 25%;
+    margin: 2rem auto;
+}
+
+/* Hero Styles */
+.hero {
+    background-image:
+        linear-gradient(to top right, rgba(228, 221, 221, 0.5) 10%, rgba(0, 0, 0, .7) 60%),
+        url(../images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+}
+
+.hero-btn {
+    background-color: var(--color-secondary);
+    color: var(--color-quinary);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: var(--color-quinary);
+    color: var(--color-secondary);
+}
+
+/* About Styles */
+#about,
+#projects {
+    background-color: var(--color-secondary);
+}
+
+.about {
+    text-align: center;
+    color: var(--color-quinary);
+    padding: 2rem;
+}
+
+/* Skills Styles */
+#skills,
+#contact {
+    background-color: var(--color-primary);
+}
+
+.skills {
+    text-align: center;
+    color: var(--color-quinary);
+    padding: 2rem;
+}
+
+.skill-box {
+    padding: 1rem;
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill-img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: var(--color-tertiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-title h3 {
+    color: var(--color-quinary);
+    margin-top: 0.5rem;
+}
+
+.skill-icon {
+    width: 50px;
+}
+
+.skill-img:hover {
+    background-color: var(--color-quaternary);
+}
+
+/* Project Styles */
+.projects {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-container {
+    margin: 20px;
+    max-width: 300px;
+    text-align: left;
+}
+
+.project-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.project-container h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-quinary);
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-container a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-quinary);
+}
+
+/* Contact Styles */
+.contact {
+    text-align: center;
+    color: var(--color-quinary);
+    padding: 2rem;
+}
+
+/* Utility Classes */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+/* Footer Styles */
+footer {
+    background: var(--color-quaternary);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: var(--color-tertiary);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 2.5rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: var(--color-secondary);
+}
+
+.footer-bottom {
+    background: var(--color-quinary);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
